@@ -1,108 +1,257 @@
+<!-- This file, related code, assets, styling and indicia are Copyright (c) Friv.com 2006-2024. Unauthorised reproduction is prohibited. Friv is a registered trademark. All rights reserved. -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx" translate="no">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Classic Friv Style</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #e6e6e6;
+    <meta charset="utf-8">
+    <link href=assets/img/frivIcon.png rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Visit Friv Classic to relive your childhood! We have managed to bring back to life over 100 of the best, most nostalgic original Friv games from our 2006-2020 menu. Click and enjoy!" name=description>
+    <title>Friv® | Friv Classic Old Menu</title>
+    <meta content="index,follow" name=robots>
+    <link rel="canonical" href="https://www.frivclassic.com/">
+
+    <meta property="og:title" content="Friv® | Friv Classic Old Menu">
+    <meta property="og:site_name" content="Old Friv">
+    <meta property="og:url" content="https://www.frivclassic.com/">
+    <meta property="og:description" content="Visit Friv Classic to relive your childhood! We have managed to bring back to life over 100 of the best, most nostalgic original Friv games from our 2006-2020 menu. Click and enjoy!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.frivclassic.com/assets/img/social-banner-friv-classic.png">
+    <meta property="fb:app_id" content="307423069337689">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@friv">
+    <meta name="twitter:creator" content="@friv">
+    <meta name="twitter:title" content="Friv® | Friv Classic Old Menu">
+    <meta name="twitter:description" content="Visit Friv Classic to relive your childhood! We have managed to bring back to life over 100 of the best, most nostalgic original Friv games from our 2006-2020 menu. Click and enjoy!">
+    <meta name="twitter:image" content="https://www.frivclassic.com/assets/img/social-banner-friv-classic.png">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Friv Classic",
+            "url": "https://www.frivclassic.com",
+            "logo": "https://www.frivclassic.com/assets/img/friv-generic-logo-min.svg",
+            "image": "https://www.frivclassic.com/assets/img/social-banner-friv-classic.png"
         }
-        .header {
-            background-color: #ffcc00;
-            padding: 10px;
-            text-align: center;
-        }
-        .header img {
-            max-width: 200px;
-        }
-        .main-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .featured-banner {
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .featured-banner img {
-            width: 100%;
-            max-height: 200px;
-            object-fit: cover;
-        }
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .game-thumbnail {
-            position: relative;
-            background-color: #fff;
-            border: 2px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-        .game-thumbnail:hover {
-            transform: scale(1.05);
-            border-color: #ffcc00;
-        }
-        .game-thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .footer a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-    </style>
+
+    </script>
+
+    <link rel="alternate" hreflang="af" href="https://www.frivclassic.com/fc-af.html">
+    <link rel="alternate" hreflang="ak" href="https://www.frivclassic.com/fc-ak.html">
+    <link rel="alternate" hreflang="am" href="https://www.frivclassic.com/fc-am.html">
+    <link rel="alternate" hreflang="ar" href="https://www.frivclassic.com/fc-ar.html">
+    <link rel="alternate" hreflang="as" href="https://www.frivclassic.com/fc-as.html">
+    <link rel="alternate" hreflang="ay" href="https://www.frivclassic.com/fc-ay.html">
+    <link rel="alternate" hreflang="az" href="https://www.frivclassic.com/fc-az.html">
+    <link rel="alternate" hreflang="be" href="https://www.frivclassic.com/fc-be.html">
+    <link rel="alternate" hreflang="bg" href="https://www.frivclassic.com/fc-bg.html">
+    <link rel="alternate" hreflang="bho" href="https://www.frivclassic.com/fc-bho.html">
+
+    <link rel="alternate" hreflang="bm" href="https://www.frivclassic.com/fc-bm.html">
+    <link rel="alternate" hreflang="bn" href="https://www.frivclassic.com/fc-bn.html">
+    <link rel="alternate" hreflang="bs" href="https://www.frivclassic.com/fc-bs.html">
+    <link rel="alternate" hreflang="ca" href="https://www.frivclassic.com/fc-ca.html">
+    <link rel="alternate" hreflang="ceb" href="https://www.frivclassic.com/fc-ceb.html">
+    <link rel="alternate" hreflang="ckb" href="https://www.frivclassic.com/fc-ckb.html">
+    <link rel="alternate" hreflang="co" href="https://www.frivclassic.com/fc-co.html">
+    <link rel="alternate" hreflang="cs" href="https://www.frivclassic.com/fc-cs.html">
+    <link rel="alternate" hreflang="cy" href="https://www.frivclassic.com/fc-cy.html">
+    <link rel="alternate" hreflang="da" href="https://www.frivclassic.com/fc-da.html">
+
+    <link rel="alternate" hreflang="de" href="https://www.frivclassic.com/fc-de.html">
+    <link rel="alternate" hreflang="doi" href="https://www.frivclassic.com/fc-doi.html">
+    <link rel="alternate" hreflang="dv" href="https://www.frivclassic.com/fc-dv.html">
+    <link rel="alternate" hreflang="ee" href="https://www.frivclassic.com/fc-ee.html">
+    <link rel="alternate" hreflang="el" href="https://www.frivclassic.com/fc-el.html">
+    <link rel="alternate" hreflang="en" href="https://www.frivclassic.com/">
+    <link rel="alternate" hreflang="eo" href="https://www.frivclassic.com/fc-eo.html">
+    <link rel="alternate" hreflang="es" href="https://www.frivclassic.com/fc-es.html">
+    <link rel="alternate" hreflang="et" href="https://www.frivclassic.com/fc-et.html">
+    <link rel="alternate" hreflang="eu" href="https://www.frivclassic.com/fc-eu.html">
+
+    <link rel="alternate" hreflang="fa" href="https://www.frivclassic.com/fc-fa.html">
+    <link rel="alternate" hreflang="fi" href="https://www.frivclassic.com/fc-fi.html">
+    <link rel="alternate" hreflang="fr" href="https://www.frivclassic.com/fc-fr.html">
+    <link rel="alternate" hreflang="fy" href="https://www.frivclassic.com/fc-fy.html">
+    <link rel="alternate" hreflang="ga" href="https://www.frivclassic.com/fc-ga.html">
+    <link rel="alternate" hreflang="gd" href="https://www.frivclassic.com/fc-gd.html">
+    <link rel="alternate" hreflang="gl" href="https://www.frivclassic.com/fc-gl.html">
+    <link rel="alternate" hreflang="gn" href="https://www.frivclassic.com/fc-gn.html">
+    <link rel="alternate" hreflang="gom" href="https://www.frivclassic.com/fc-gom.html">
+    <link rel="alternate" hreflang="gu" href="https://www.frivclassic.com/fc-gu.html">
+
+    <link rel="alternate" hreflang="ha" href="https://www.frivclassic.com/fc-ha.html">
+    <link rel="alternate" hreflang="haw" href="https://www.frivclassic.com/fc-haw.html">
+    <link rel="alternate" hreflang="hi" href="https://www.frivclassic.com/fc-hi.html">
+    <link rel="alternate" hreflang="hmn" href="https://www.frivclassic.com/fc-hmn.html">
+    <link rel="alternate" hreflang="hr" href="https://www.frivclassic.com/fc-hr.html">
+    <link rel="alternate" hreflang="ht" href="https://www.frivclassic.com/fc-ht.html">
+    <link rel="alternate" hreflang="hu" href="https://www.frivclassic.com/fc-hu.html">
+    <link rel="alternate" hreflang="hy" href="https://www.frivclassic.com/fc-hy.html">
+    <link rel="alternate" hreflang="id" href="https://www.frivclassic.com/fc-id.html">
+    <link rel="alternate" hreflang="ig" href="https://www.frivclassic.com/fc-ig.html">
+
+    <link rel="alternate" hreflang="ilo" href="https://www.frivclassic.com/fc-ilo.html">
+    <link rel="alternate" hreflang="is" href="https://www.frivclassic.com/fc-is.html">
+    <link rel="alternate" hreflang="it" href="https://www.frivclassic.com/fc-it.html">
+    <link rel="alternate" hreflang="he" href="https://www.frivclassic.com/fc-he.html"> <!-- iw > he -->
+    <link rel="alternate" hreflang="ja" href="https://www.frivclassic.com/fc-ja.html">
+    <link rel="alternate" hreflang="jv" href="https://www.frivclassic.com/fc-jv.html"> <!-- jw > jv -->
+    <link rel="alternate" hreflang="ka" href="https://www.frivclassic.com/fc-ka.html">
+    <link rel="alternate" hreflang="kk" href="https://www.frivclassic.com/fc-kk.html">
+    <link rel="alternate" hreflang="km" href="https://www.frivclassic.com/fc-km.html">
+    <link rel="alternate" hreflang="kn" href="https://www.frivclassic.com/fc-kn.html">
+
+    <link rel="alternate" hreflang="ko" href="https://www.frivclassic.com/fc-ko.html">
+    <link rel="alternate" hreflang="kri" href="https://www.frivclassic.com/fc-kri.html">
+    <link rel="alternate" hreflang="ku" href="https://www.frivclassic.com/fc-ku.html">
+    <link rel="alternate" hreflang="ky" href="https://www.frivclassic.com/fc-ky.html">
+    <link rel="alternate" hreflang="la" href="https://www.frivclassic.com/fc-la.html">
+    <link rel="alternate" hreflang="lb" href="https://www.frivclassic.com/fc-lb.html">
+    <link rel="alternate" hreflang="lg" href="https://www.frivclassic.com/fc-lg.html">
+    <link rel="alternate" hreflang="ln" href="https://www.frivclassic.com/fc-ln.html">
+    <link rel="alternate" hreflang="lo" href="https://www.frivclassic.com/fc-lo.html">
+    <link rel="alternate" hreflang="lt" href="https://www.frivclassic.com/fc-lt.html">
+
+    <link rel="alternate" hreflang="lus" href="https://www.frivclassic.com/fc-lus.html">
+    <link rel="alternate" hreflang="lv" href="https://www.frivclassic.com/fc-lv.html">
+    <link rel="alternate" hreflang="mai" href="https://www.frivclassic.com/fc-mai.html">
+    <link rel="alternate" hreflang="mg" href="https://www.frivclassic.com/fc-mg.html">
+    <link rel="alternate" hreflang="mi" href="https://www.frivclassic.com/fc-mi.html">
+    <link rel="alternate" hreflang="mk" href="https://www.frivclassic.com/fc-mk.html">
+    <link rel="alternate" hreflang="ml" href="https://www.frivclassic.com/fc-ml.html">
+    <link rel="alternate" hreflang="mn" href="https://www.frivclassic.com/fc-mn.html">
+    <link rel="alternate" hreflang="mni-Mtei" href="https://www.frivclassic.com/fc-mni-Mtei.html">
+    <link rel="alternate" hreflang="mr" href="https://www.frivclassic.com/fc-mr.html">
+
+    <link rel="alternate" hreflang="ms" href="https://www.frivclassic.com/fc-ms.html">
+    <link rel="alternate" hreflang="mt" href="https://www.frivclassic.com/fc-mt.html">
+    <link rel="alternate" hreflang="my" href="https://www.frivclassic.com/fc-my.html">
+    <link rel="alternate" hreflang="ne" href="https://www.frivclassic.com/fc-ne.html">
+    <link rel="alternate" hreflang="nl" href="https://www.frivclassic.com/fc-nl.html">
+    <link rel="alternate" hreflang="no" href="https://www.frivclassic.com/fc-no.html">
+    <link rel="alternate" hreflang="nso" href="https://www.frivclassic.com/fc-nso.html">
+    <link rel="alternate" hreflang="ny" href="https://www.frivclassic.com/fc-ny.html">
+    <link rel="alternate" hreflang="om" href="https://www.frivclassic.com/fc-om.html">
+    <link rel="alternate" hreflang="or" href="https://www.frivclassic.com/fc-or.html">
+
+    <link rel="alternate" hreflang="pa" href="https://www.frivclassic.com/fc-pa.html">
+    <link rel="alternate" hreflang="pl" href="https://www.frivclassic.com/fc-pl.html">
+    <link rel="alternate" hreflang="ps" href="https://www.frivclassic.com/fc-ps.html">
+    <link rel="alternate" hreflang="pt" href="https://www.frivclassic.com/fc-pt.html">
+    <link rel="alternate" hreflang="qu" href="https://www.frivclassic.com/fc-qu.html">
+    <link rel="alternate" hreflang="ro" href="https://www.frivclassic.com/fc-ro.html">
+    <link rel="alternate" hreflang="ru" href="https://www.frivclassic.com/fc-ru.html">
+    <link rel="alternate" hreflang="rw" href="https://www.frivclassic.com/fc-rw.html">
+    <link rel="alternate" hreflang="sa" href="https://www.frivclassic.com/fc-sa.html">
+    <link rel="alternate" hreflang="sd" href="https://www.frivclassic.com/fc-sd.html">
+
+    <link rel="alternate" hreflang="si" href="https://www.frivclassic.com/fc-si.html">
+    <link rel="alternate" hreflang="sk" href="https://www.frivclassic.com/fc-sk.html">
+    <link rel="alternate" hreflang="sl" href="https://www.frivclassic.com/fc-sl.html">
+    <link rel="alternate" hreflang="sm" href="https://www.frivclassic.com/fc-sm.html">
+    <link rel="alternate" hreflang="sn" href="https://www.frivclassic.com/fc-sn.html">
+    <link rel="alternate" hreflang="so" href="https://www.frivclassic.com/fc-so.html">
+    <link rel="alternate" hreflang="sq" href="https://www.frivclassic.com/fc-sq.html">
+    <link rel="alternate" hreflang="sr" href="https://www.frivclassic.com/fc-sr.html">
+    <link rel="alternate" hreflang="st" href="https://www.frivclassic.com/fc-st.html">
+    <link rel="alternate" hreflang="su" href="https://www.frivclassic.com/fc-su.html">
+
+    <link rel="alternate" hreflang="sv" href="https://www.frivclassic.com/fc-sv.html">
+    <link rel="alternate" hreflang="sw" href="https://www.frivclassic.com/fc-sw.html">
+    <link rel="alternate" hreflang="ta" href="https://www.frivclassic.com/fc-ta.html">
+    <link rel="alternate" hreflang="te" href="https://www.frivclassic.com/fc-te.html">
+    <link rel="alternate" hreflang="tg" href="https://www.frivclassic.com/fc-tg.html">
+    <link rel="alternate" hreflang="th" href="https://www.frivclassic.com/fc-th.html">
+    <link rel="alternate" hreflang="ti" href="https://www.frivclassic.com/fc-ti.html">
+    <link rel="alternate" hreflang="tk" href="https://www.frivclassic.com/fc-tk.html">
+    <link rel="alternate" hreflang="tl" href="https://www.frivclassic.com/fc-tl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.frivclassic.com/fc-tr.html">
+
+    <link rel="alternate" hreflang="ts" href="https://www.frivclassic.com/fc-ts.html">
+    <link rel="alternate" hreflang="tt" href="https://www.frivclassic.com/fc-tt.html">
+    <link rel="alternate" hreflang="ug" href="https://www.frivclassic.com/fc-ug.html">
+    <link rel="alternate" hreflang="uk" href="https://www.frivclassic.com/fc-uk.html">
+    <link rel="alternate" hreflang="ur" href="https://www.frivclassic.com/fc-ur.html">
+    <link rel="alternate" hreflang="uz" href="https://www.frivclassic.com/fc-uz.html">
+    <link rel="alternate" hreflang="vi" href="https://www.frivclassic.com/fc-vi.html">
+    <link rel="alternate" hreflang="xh" href="https://www.frivclassic.com/fc-xh.html">
+    <link rel="alternate" hreflang="yi" href="https://www.frivclassic.com/fc-yi.html">
+    <link rel="alternate" hreflang="yo" href="https://www.frivclassic.com/fc-yo.html">
+
+    <link rel="alternate" hreflang="zh-CN" href="https://www.frivclassic.com/fc-zh-CN.html">
+    <link rel="alternate" hreflang="zh-TW" href="https://www.frivclassic.com/fc-zh-TW.html">
+    <link rel="alternate" hreflang="zh" href="https://www.frivclassic.com/fc-zh.html">
+    <link rel="alternate" hreflang="zu" href="https://www.frivclassic.com/fc-zu.html">
+
+
+
+
+
+
+
+
+
+    <!-- default below -->
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="assets/css/classic.css">
+
 </head>
+
 <body>
-    <header class="header">
-        <img src="https://www.classicfriv.com/images/logo.png" alt="Friv Logo">
-    </header>
-    <div class="featured-banner">
-        <img src="https://www.classicfriv.com/images/featured-banner.jpg" alt="Featured Games">
-    </div>
-    <div class="main-container">
-        <div class="game-grid">
-            <div class="game-thumbnail">
-                <img src="https://www.classicfriv.com/images/game1.jpg" alt="Game 1">
-            </div>
-            <div class="game-thumbnail">
-                <img src="https://www.classicfriv.com/images/game2.jpg" alt="Game 2">
-            </div>
-            <div class="game-thumbnail">
-                <img src="https://www.classicfriv.com/images/game3.jpg" alt="Game 3">
-            </div>
-            <div class="game-thumbnail">
-                <img src="https://www.classicfriv.com/images/game4.jpg" alt="Game 4">
-            </div>
-            <!-- Add more game-thumbnail divs as needed -->
+    
+    <div class="center"><span class="loadingSpinner"></span></div>
+    
+    <div id=outerLogoContainer>
+        <div id=innerLogoContainer>
+            <div id=loadingLogo></div>
+            <h1 id=underLogoText>&nbsp;</h1>
         </div>
     </div>
-    <footer class="footer">
-        <p>&copy; 2024 Classic Friv | <a href="#">About Us</a> | <a href="#">Contact</a> | <a href="#">Privacy Policy</a></p>
-    </footer>
+
+
+    <div id="menu">
+        <embed id="flashObject" src="frivMenuPhoenix.swf" type="application/x-shockwave-flash" onload="flashObjectLoaded()">
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id=mobileMessage>Ooops! It looks like you're using a mobile device. The Flash menu here and the games are old now, and were designed to work on desktop computers with a keyboard and mouse. For a great new, up to date gaming experience, please visit <a href="https://www.friv.com/" target="_blank">friv.com</a> ...happy gaming!</p>
+        </div>
+
+    </div>
+
+    <script>function removeSpinner(){console.log("remove spinner - index");}</script>
+
+    <script src="assets/scripts/ruffle-240203/ruffle.js"></script>
+    <script src="assets/scripts/classic.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1SE2SYDTW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q1SE2SYDTW');
+
+    </script>
+
 </body>
+
 </html>
